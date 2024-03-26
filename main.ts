@@ -36,43 +36,34 @@ if (answerPin.pin === atmPin) {
             console.log(`You don't have enough amount. Your current balance is: ${myBalance}`);
         } else if (amount.amount == "500") {
             myBalance -= amount.amount
-
+            console.log(`Receive your Rs.${amount.amount} cash, Thank you for your transaction :)`);
+            console.log(`Your remaining balance after transaction is: ${myBalance}`);
         } else if (amount.amount == "1000") {
             myBalance -= amount.amount
-
+            console.log(`Receive your Rs.${amount.amount} cash, Thank you for your transaction :)`);
+            console.log(`Your remaining balance after transaction is: ${myBalance}`);
         } else if (amount.amount == "5000") {
             myBalance -= amount.amount
-
+            console.log(`Receive your Rs.${amount.amount} cash, Thank you for your transaction :)`);
+            console.log(`Your remaining balance after transaction is: ${myBalance}`);
         } else if (amount.amount == "10000") {
             myBalance -= amount.amount
-
+            console.log(`Receive your Rs.${amount.amount} cash, Thank you for your transaction :)`);
+            console.log(`Your remaining balance after transaction is: ${myBalance}`);
         } else if (amount.amount == "25000") {
             myBalance -= amount.amount
-
-        } else {
-            myBalance -= amount.amount
-
-        }
-        let passCash = await inquirer.prompt
-            (
-                [
-                    {
-                        name: "cash",
-                        message: "Do you want to pass your cash",
-                        type: "list",
-                        choices: ["yes", "no"]
-                    }])
-        if (passCash.cash == "yes") {
             console.log(`Receive your Rs.${amount.amount} cash, Thank you for your transaction :)`);
             console.log(`Your remaining balance after transaction is: ${myBalance}`);
         } else {
-            console.log("Thank You!, Your transaction has been returned back.");
+            myBalance -= amount.amount
+            console.log(`Receive your Rs.${amount.amount} cash, Thank you for your transaction :)`);
+            console.log(`Your remaining balance after transaction is: ${myBalance}`);
         }
-
     }
     if (doOperation.action == "Check Balance") {
         console.log(`Your current balance is: ${myBalance}`);
     }
-} else {
+}
+else {
     console.log("Incorrect Pin. Please enter correct pin.");
 }
