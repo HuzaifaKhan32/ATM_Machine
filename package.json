@@ -1,6 +1,6 @@
 {
-  "name": "huzaifa_atm",
-  "version": "1.0.3",
+  "name": "huzaifas-atm",
+  "version": "1.0.1",
   "main": "index.js",
   "type": "module",
   "bin": "index.js",
