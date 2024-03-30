@@ -37,28 +37,101 @@ if (answerPin.pin === atmPin) {
             console.log(`You don't have enough amount. Your current balance is: ${myBalance}`);
         } else if (amount.amount == "500") {
             myBalance -= amount.amount
-            console.log(`Receive your Rs.${amount.amount} cash, Thank you for your transaction :)`);
-            console.log(`Your remaining balance after transaction is: ${myBalance}`);
+            let passCash = await inquirer.prompt(
+                [
+                    {
+                        name: "cash",
+                        message: "Do you want to pass or cash or not?",
+                        type: "list",
+                        choices: ["Yes", "No"]
+                    }])
+            if (passCash.cash == "Yes") {
+                console.log(`Receive your Rs.${amount.amount} cash, Thank you for your transaction :)`);
+                console.log(`Your remaining balance after transaction is: ${myBalance}`);
+            } else{
+                console.log("Your transaction has been returned back.")
+            }
         } else if (amount.amount == "1000") {
             myBalance -= amount.amount
-            console.log(`Receive your Rs.${amount.amount} cash, Thank you for your transaction :)`);
-            console.log(`Your remaining balance after transaction is: ${myBalance}`);
+            let passCash = await inquirer.prompt(
+                [
+                    {
+                        name: "cash",
+                        message: "Do you want to pass your cash or not?",
+                        type: "list",
+                        choices: ["Yes", "No"]
+                    }])
+            if (passCash.cash == "Yes") {
+                console.log(`Receive your Rs.${amount.amount} cash, Thank you for your transaction :)`);
+                console.log(`Your remaining balance after transaction is: ${myBalance}`);
+            } else{
+                console.log("Your transaction has been returned back.")
+            }
         } else if (amount.amount == "5000") {
             myBalance -= amount.amount
-            console.log(`Receive your Rs.${amount.amount} cash, Thank you for your transaction :)`);
-            console.log(`Your remaining balance after transaction is: ${myBalance}`);
+            let passCash = await inquirer.prompt(
+                [
+                    {
+                        name: "cash",
+                        message: "Do you want to pass or cash or not?",
+                        type: "list",
+                        choices: ["Yes", "No"]
+                    }])
+            if (passCash.cash == "Yes") {
+                console.log(`Receive your Rs.${amount.amount} cash, Thank you for your transaction :)`);
+                console.log(`Your remaining balance after transaction is: ${myBalance}`);
+            } else{
+                console.log("Your transaction has been returned back.")
+            }
         } else if (amount.amount == "10000") {
             myBalance -= amount.amount
-            console.log(`Receive your Rs.${amount.amount} cash, Thank you for your transaction :)`);
-            console.log(`Your remaining balance after transaction is: ${myBalance}`);
+            let passCash = await inquirer.prompt(
+                [
+                    {
+                        name: "cash",
+                        message: "Do you want to pass or cash or not?",
+                        type: "list",
+                        choices: ["Yes", "No"]
+                    }])
+            if (passCash.cash == "Yes") {
+                console.log(`Receive your Rs.${amount.amount} cash, Thank you for your transaction :)`);
+                console.log(`Your remaining balance after transaction is: ${myBalance}`);
+            } else{
+                console.log("Your transaction has been returned back.")
+            }
         } else if (amount.amount == "25000") {
             myBalance -= amount.amount
-            console.log(`Receive your Rs.${amount.amount} cash, Thank you for your transaction :)`);
-            console.log(`Your remaining balance after transaction is: ${myBalance}`);
+            let passCash = await inquirer.prompt(
+                [
+                    {
+                        name: "cash",
+                        message: "Do you want to pass or cash or not?",
+                        type: "list",
+                        choices: ["Yes", "No"]
+                    }])
+            if (passCash.cash == "Yes") {
+                console.log(`Receive your Rs.${amount.amount} cash, Thank you for your transaction :)`);
+                console.log(`Your remaining balance after transaction is: ${myBalance}`);
+            } else{
+                console.log("Your transaction has been returned back.")
+            }
         } else {
             myBalance -= amount.amount
-            console.log(`Receive your Rs.${amount.amount} cash, Thank you for your transaction :)`);
-            console.log(`Your remaining balance after transaction is: ${myBalance}`);
+
+            let passCash = await inquirer.prompt(
+                [
+                    {
+                        name: "cash",
+                        message: "Do you want to pass or cash or not?",
+                        type: "list",
+                        choices: ["Yes", "No"]
+                    }])
+            if (passCash.cash == "Yes") {
+                console.log(`Receive your Rs.${amount.amount} cash, Thank you for your transaction :)`);
+                console.log(`Your remaining balance after transaction is: ${myBalance}`);
+            } else{
+                console.log("Your transaction has been returned back.")
+            }
         }
     }
     if (doOperation.action == "Check Balance") {

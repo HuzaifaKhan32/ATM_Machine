@@ -1,6 +1,6 @@
 {
-  "name": "hk_17_atm_machine",
-  "version": "1.0.1",
+  "name": "huzaifa_atm",
+  "version": "1.0.3",
   "main": "index.js",
   "type": "module",
   "bin": "index.js",
